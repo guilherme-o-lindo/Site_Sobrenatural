@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ranking | Sobrenatural</title>
+
+    <link rel="shortcut icon" href="/frontend/assets/icons/icon 2 supernatural.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/frontend/css/ranking.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="/frontend/assets/imgs/logo supernatural.png" alt="Supernatural">
+
+        <h1>Ranking</h1>
+
+    </header>
+
+
+    <main>
+
+        <h2>Ranking dos Caçadores</h2>
+
+        <div class="ranking">
+
+            <div class="ranking_item">
+                <span class="position">1º</span>
+                <span class="username">Dean</span>
+                <span class="score">67 pontos</span>
+            </div>
+
+            <div class="ranking_item">
+                <span class="position">2º</span>
+                <span class="username">Castiel</span>
+                <span class="score">42 pontos</span>
+            </div>
+
+            <div class="ranking_item">
+                <span class="position">3º</span>
+                <span class="username">Sam Betinha</span>
+                <span class="score">0 pontos</span>
+            </div>
+
+        </div>
+
+        <h2>Ranking dos Fãs</h2>
+
+        <div class="ranking">
+
+            {% for usuario, pontos in ranking %}
+
+            <div class="ranking_item">
+
+                <span class="username">
+                    {{ usuario }}
+                </span>
+                <br>
+                <span class="score">
+                    {{ pontos }} pontos
+                </span>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <a href="/" class="button">
+            Voltar ao início
+        </a>
+
+    </main>
+
+
+    <footer>
+
+        <p>Sobrenatural Quiz — Projeto de fã</p>
+
+        <small>Projeto desenvolvido para fins educacionais.</small>
+        <br>
+        <small>© 2026 Sobrenatural Quiz</small>
+
+    </footer>
+
+</body>
+
+</html>

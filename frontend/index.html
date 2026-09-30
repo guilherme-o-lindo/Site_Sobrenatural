@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobrenatural Quiz</title>
+
+    <link rel="shortcut icon" href="/frontend/assets/icons/icon 2 supernatural.png" type="image/x-icon">
+    <link rel="stylesheet" href="/frontend/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="/frontend/assets/imgs/logo supernatural.png" alt="Supernatural">
+
+        <h1>Sobrenatural Quiz</h1>
+
+        <p>
+            Teste seus conhecimentos sobre os irmãos Winchester!
+        </p>
+    </header>
+
+    <div class="content">
+
+        <aside class="actors">
+
+            <div class="actor_elem">
+                <img src="/frontend/assets/imgs/jared.jpg" alt="Jared Padalecki">
+
+                <span>Jared Padalecki</span>
+            </div>
+
+            <div class="actor_elem">
+                <img src="/frontend/assets/imgs/jensen.jpg" alt="Jensen Ackles">
+
+                <span>Jensen Ackles</span>
+            </div>
+
+            <div class="actor_elem">
+                <img src="/frontend/assets/imgs/misha.jpg" alt="Misha Collins">
+
+                <span>Misha Collins</span>
+            </div>
+
+        </aside>
+
+        <main>
+
+            <h2>Você conhece Sobrenatural?</h2>
+
+            <p>
+                Responda às perguntas e descubra se você é um verdadeiro caçador.
+            </p>
+
+            <form action="/api/iniciar-quiz" method="post" class="quiz-form">
+
+                <input type="text" name="usuario" placeholder="Digite seu nome" autocomplete="off" required>
+
+                <button type="submit" class="buttons">
+                    Começar Quiz
+                </button>
+
+            </form>
+
+            <a href="/ranking" class="buttons">
+                Ver Ranking
+            </a>
+        </main>
+
+        <aside class="posters">
+
+            <img src="/frontend/assets/imgs/poster 1.jpg" alt="Pôster de Supernatural">
+
+            <img src="/frontend/assets/imgs/poster 2.jpg" alt="Pôster de Supernatural">
+
+        </aside>
+
+    </div>
+
+    <footer>
+
+        <p>Sobrenatural Quiz — Projeto de fã</p>
+
+        <small>Projeto desenvolvido para fins educacionais.</small>
+        <br>
+        <small>© 2026 Sobrenatural Quiz</small>
+
+    </footer>
+
+</body>
+
+</html>

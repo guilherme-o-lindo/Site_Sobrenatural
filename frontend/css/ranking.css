@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1b1716 url(../assets/imgs/background\ supernatural.jpg);
+
+    margin: 0;
+    min-height: 100vh;
+
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+header {
+    text-align: center;
+
+    padding: 35px 20px 10px;
+
+    transform: translateY(-15px);
+}
+
+
+header img {
+    display: block;
+
+    width: 350px;
+    max-width: 90%;
+
+    margin: 0 auto 0px;
+
+    transform: translateY(-10px) scale(1.3);
+}
+
+
+header h1 {
+    margin: 0 0 10px;
+
+    font-size: 42px;
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 2px 8px #000,
+        0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+
+header p {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #ccc;
+
+    font-style: italic;
+}
+
+
+/* ---------------- MAIN ---------------- */
+
+main {
+    width: 650px;
+    max-width: calc(100% - 30px);
+
+    margin: 10px auto 40px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+
+main h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+/* ---------------- RANKING ---------------- */
+
+.ranking {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+.ranking_item {
+    display: grid;
+
+    grid-template-columns: 60px 1fr 120px;
+
+    align-items: center;
+
+    min-height: 55px;
+
+    padding: 10px 15px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 6px;
+
+    text-align: left;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.ranking_item:hover {
+    background: rgba(255, 255, 255, 0.06);
+
+    border-color: rgba(255, 255, 255, 0.2);
+
+    transform: translateX(3px);
+}
+
+
+.position {
+    font-size: 18px;
+
+    color: #aaa;
+
+    font-weight: bold;
+}
+
+
+.username {
+    font-size: 17px;
+}
+
+
+.score {
+    text-align: right;
+
+    font-size: 15px;
+
+    color: #aaa;
+}
+
+
+/* ---------------- BOTÃO ---------------- */
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border: 1px solid #777;
+
+    border-radius: 5px;
+
+    background: #181818;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.button:hover {
+    background: #292929;
+
+    border-color: #aaa;
+
+    transform: translateY(-2px);
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    margin-top: auto;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: rgba(0, 0, 0, 0.25);
+
+    color: #aaa;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+footer small {
+    color: #777;
+}
+
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+@media (max-width: 700px) {
+
+    header {
+        padding-top: 25px;
+    }
+
+
+    header img {
+        width: 320px;
+    }
+
+
+    header h1 {
+        font-size: 34px;
+    }
+
+
+    header p {
+        font-size: 16px;
+    }
+
+
+    main {
+        padding: 25px 20px;
+    }
+
+
+    main h2 {
+        font-size: 26px;
+    }
+
+
+    .ranking_item {
+        grid-template-columns: 45px 1fr 100px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header img {
+        width: 280px;
+    }
+
+
+    main {
+        max-width: calc(100% - 20px);
+
+        padding: 20px 15px;
+    }
+
+
+    .ranking_item {
+        grid-template-columns: 40px 1fr;
+
+        gap: 5px;
+    }
+
+
+    .score {
+        grid-column: 2;
+
+        text-align: left;
+
+        font-size: 14px;
+    }
+
+}

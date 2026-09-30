@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado | Sobrenatural</title>
+
+    <link rel="shortcut icon" href="/frontend/assets/icons/icon 2 supernatural.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/frontend/css/resultado.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="/frontend/assets/imgs/logo supernatural.png" alt="Supernatural">
+
+        <h1>Resultado</h1>
+
+        <p>Veja como você se saiu no quiz</p>
+
+    </header>
+
+    <main>
+
+        <h2>Seu resultado</h2>
+
+        <div class="score">
+
+            <span class="score-number">{{ pontos }}</span>
+
+            <span class="score-total">/ 10</span>
+
+        </div>
+
+        <p class="message">
+            {{ mensagem }}
+        </p>
+
+        <div class="gabarito">
+
+            <h2>Gabarito</h2>
+
+            {% for questao, resposta in respostas.items() %}
+
+            <div class="questao {% if resposta.correta %}questao-correta{% else %}questao-errada{% endif %}">
+
+                <h3>{{ questao.upper() }}</h3>
+
+                <p>
+                    Sua resposta:
+                    <strong>{{ resposta.resposta_usuario }}</strong>
+                </p>
+
+                <p>
+                    Resposta correta:
+                    <strong>{{ resposta.resposta_certa }}</strong>
+                </p>
+
+                {% if resposta.correta %}
+                <p class="status">✓ Resposta correta</p>
+                {% else %}
+                <p class="status">✗ Resposta incorreta</p>
+                {% endif %}
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="/quiz?usuario={{ usuario }}">
+                Refazer quiz
+            </a>
+
+            <a href="/">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>Sobrenatural Quiz — Projeto de fã</p>
+
+        <small>Projeto desenvolvido para fins educacionais.</small>
+        <br>
+        <small>© 2026 Sobrenatural Quiz</small>
+
+    </footer>
+
+</body>
+
+</html>

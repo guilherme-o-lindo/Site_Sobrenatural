@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | Sobrenatural</title>
+
+    <link rel="shortcut icon" href="/frontend/assets/icons/icon 2 supernatural.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/frontend/css/quiz.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="/frontend/assets/imgs/logo supernatural.png" alt="Supernatural">
+
+        <h1>Quiz</h1>
+
+        <p>Descubra o quanto você conhece de Sobrenatural, {{ usuario }}</p>
+
+    </header>
+
+    <main>
+
+        <h2>Quiz Sobrenatural</h2>
+
+        <form action="/api/responder-quiz" method="post">
+
+            <div class="question">
+
+                <h3>1. Qual é o nome do meio de Dean Winchester?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="michael" required>
+                    Michael
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="john">
+                    John
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="samuel">
+                    Samuel
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="william">
+                    William
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>2. Qual é o nome do carro de Dean?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="impala" required>
+                    Chevrolet Impala 1967
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="mustang">
+                    Ford Mustang 1967
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="camaro">
+                    Chevrolet Camaro 1969
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="charger">
+                    Dodge Charger 1968
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>3. Em qual episódio Castiel aparece pela primeira vez?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="lazarus" required>
+                    Lazarus Rising
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="malleus">
+                    Malleus Maleficarum
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="mystery">
+                    Mystery Spot
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="heaven">
+                    Heaven and Hell
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>4. Qual era o nome do demônio que possuía Meg Masters?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="meg" required>
+                    Meg
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="azazel">
+                    Azazel
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="alastair">
+                    Alastair
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="crowley">
+                    Crowley
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>5. Qual era o nome do cão de John Winchester?</h3>
+
+                <label>
+                    <input type="radio" name="q5" value="miracle" required>
+                    Miracle
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="samson">
+                    Samson
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="harley">
+                    Harley
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="brutus">
+                    Brutus
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>6. Qual era o nome do meio de Sam Winchester?</h3>
+
+                <label>
+                    <input type="radio" name="q6" value="william" required>
+                    William
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="james">
+                    James
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="michael">
+                    Michael
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="edward">
+                    Edward
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>7. Qual era o sobrenome de solteira de Mary Winchester?</h3>
+
+                <label>
+                    <input type="radio" name="q7" value="campbell" required>
+                    Campbell
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="kelly">
+                    Kelly
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="collins">
+                    Collins
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="robinson">
+                    Robinson
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>8. Qual objeto é conhecido por ser capaz de matar um demônio?</h3>
+
+                <label>
+                    <input type="radio" name="q8" value="blade" required>
+                    Lâmina de demônio
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="knife">
+                    Faca de Ruby
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="spear">
+                    Lança de madeira
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="gun">
+                    Arma comum
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>9. Qual é o nome verdadeiro de Crowley?</h3>
+
+                <label>
+                    <input type="radio" name="q9" value="fergus" required>
+                    Fergus MacLeod
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="alastair">
+                    Alastair MacLeod
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="arthur">
+                    Arthur Ketch
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="gavin">
+                    Gavin MacLeod
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>10. Qual era o nome do primeiro hospedeiro humano de Lúcifer?</h3>
+
+                <label>
+                    <input type="radio" name="q10" value="nick" required>
+                    Nick
+                </label>
+
+                <label>
+                    <input type="radio" name="q10" value="adam">
+                    Adam Milligan
+                </label>
+
+                <label>
+                    <input type="radio" name="q10" value="kevin">
+                    Kevin Tran
+                </label>
+
+                <label>
+                    <input type="radio" name="q10" value="jimmy">
+                    Jimmy Novak
+                </label>
+
+            </div>
+
+
+            <input type="hidden" name="usuario" value="{{ usuario }}">
+
+            <button type="submit" class="button">
+                Enviar respostas
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>Sobrenatural Quiz — Projeto de fã</p>
+
+        <small>Projeto desenvolvido para fins educacionais.</small>
+        <br>
+        <small>© 2026 Sobrenatural Quiz</small>
+
+    </footer>
+
+</html>
