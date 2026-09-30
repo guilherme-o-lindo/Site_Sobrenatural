@@ -1,5 +1,9 @@
 # Site Sobrenatural
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?logo=fastapi)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+
 Projeto de um quiz sobre a série **Sobrenatural**, desenvolvido com **FastAPI**, **Jinja2**, **HTML/CSS** e **SQLite**.
 
 ## Estrutura
